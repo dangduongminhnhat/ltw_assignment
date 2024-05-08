@@ -1,0 +1,96 @@
+.linkStyle {
+  color: #a9a9a9;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+.linkStyleColor {
+  color: #a9a9a9;
+}
+.titlePage {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.container.container-border-page {
+  max-width: 60%;
+  border-top: 0.5px solid #dcdcdc;
+  border-left: 1px solid #c0c0c0;
+  border-right: 1px solid #c0c0c0;
+  border-bottom: 3px solid #c0c0c0;
+  margin-top: 20px;
+}
+@media screen and (max-width: 992px) {
+  .container.container-border-page {
+    max-width: 80%;
+  }
+}
+.inside-container-page {
+  padding-top: 5px;
+  padding-left: 30px;
+  padding-right: 20px;
+}
+.content-in-container {
+  display: flex;
+  align-items: center;
+}
+.evaluate-link {
+  min-width: 100%;
+  text-align: right;
+  color: #ffd700;
+}
+.address-style {
+  /* display: flex; */
+  align-items: center;
+  margin-left: 15px;
+  line-height: 40px;
+  text-align: center;
+}
+.note-style {
+  font-size: small;
+  color: #a9a9a9;
+}
+.col.prices {
+  display: flex;
+  justify-content: right;
+  /* align-items: center; */
+  max-width: 25%;
+}
+.momo-icon {
+  display: flex;
+  align-items: center;
+}
+.rate {
+  height: 46px;
+  padding: 0 10px;
+  float: left;
+}
+.rate:not(:checked) > input {
+  position: absolute;
+  top: -9999px;
+}
+.rate:not(:checked) > label {
+  float: right;
+  width: 1em;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 30px;
+  color: #ccc;
+}
+.rate:not(:checked) > label:before {
+  content: "★ ";
+}
+.rate > input:checked ~ label {
+  color: #ffc700;
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+  color: #deb217;
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+  color: #c59b08;
+}

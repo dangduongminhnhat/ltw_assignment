@@ -1,0 +1,250 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "K2D";
+  margin: 0;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  font-weight: bold;
+  line-height: unset;
+  color: unset;
+}
+
+.linkStyleColor {
+  color: #a9a9a9;
+}
+
+.linkStyle {
+  color: #a9a9a9;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+.address {
+  margin-top: 15px;
+  margin-left: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+  margin-bottom: 0px;
+  margin-top: 10px;
+}
+.add_detail {
+  color: rgba(0, 0, 0, 0.5);
+  margin-top: 2px;
+}
+
+.star_time_dis {
+  width: 70%;
+  margin: 5px;
+}
+
+.star_time_dis span,
+.star_time_dis p {
+  display: inline-block;
+}
+
+.comment a {
+  color: rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+}
+
+.comment a:hover {
+  color: #ffc700;
+  text-decoration: underline;
+}
+
+#icon-button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.iconify {
+  color: #ffc700;
+}
+
+.item {
+  display: flex;
+  margin-top: 40px;
+  justify-content: space-between;
+}
+.tocotoco_body {
+  justify-content: center;
+  width: 95%;
+}
+
+.menu_tocotoco {
+  align-items: center;
+  position: relative;
+  width: 20%;
+}
+.menu_tocotoco div {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+.menu_tocotoco a {
+  text-decoration: none;
+  color: black;
+  display: block;
+  text-align: left;
+  width: fit-content;
+  margin-bottom: 30px;
+}
+.menu_tocotoco a:hover {
+  color: #ffc700;
+  text-decoration: underline;
+}
+
+.products {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.product {
+  padding: 10px;
+  width: 30%;
+  color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  /* justify-content: space-evenly; */
+  gap: 10px;
+  box-shadow: 2px 5px 5px rgba(164, 160, 160, 0.5);
+  height: fit-content;
+  position: relative;
+}
+
+.pro_info {
+  margin-left: 10px;
+  height: 100%;
+}
+
+#myModal {
+  border: #a9a9a9 1px solid;
+  box-shadow: 2px 5px 5px rgba(164, 160, 160, 0.5);
+  border-radius: 10px;
+  z-index: 2;
+  width: 40%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  padding: 30px;
+  overflow: auto;
+  background: white;
+}
+.add_to_giohang {
+  display: flex;
+  box-shadow: 2px 5px 5px rgba(164, 160, 160, 0.5);
+  margin-bottom: 10px;
+  padding-bottom: 30px;
+  padding-left: 10px;
+}
+
+#note {
+  border: 1px black solid;
+  border-radius: 20px;
+  width: 90%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+.minus_button {
+  border: none;
+  margin-right: 30px;
+  background-color: white;
+}
+.add_button {
+  border: none;
+  margin-left: 30px;
+  background-color: white;
+}
+
+#add_to_giohang_button {
+  background-color: #ffc700;
+  opacity: 0.5;
+  border-radius: 20px;
+  color: black;
+  padding: 5px;
+}
+
+#second-layer {
+  display: none;
+  background: black;
+  opacity: 50%;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+}
+#add_to_giohang_button {
+  border: none;
+}
+.description {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  height: 75px;
+}
+.img-product {
+  width: 30%;
+  height: 50px;
+  object-fit: contain;
+}
+@media only screen and (max-width: 950px) {
+  .products {
+    flex-direction: column;
+  }
+  .products .product {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .menu_tocotoco {
+    /* width: 30%; */
+    display: none;
+  }
+  /* .all_product {
+    width: 65%;
+  } */
+  .item {
+    justify-content: center;
+  }
+  .description {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+}
+#description-form {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}

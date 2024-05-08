@@ -1,0 +1,95 @@
+body {
+    font-family: "K2D";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+input, #register_button{
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 40px;
+}
+
+input[type=button] {
+    border: 2px solid black;
+    background-color: #FFFFFF;
+}
+
+.register {
+    margin-top: 50px;
+    text-align: center;
+    width: 570px;
+    height: 100%;
+    margin-bottom: 20px;
+}
+
+#UniEat{
+    color: #FFC700;
+}
+
+#phone, #mail, #pass, #pass_again, #username {
+    background-color:#EDECEC;
+}
+
+#register_button{
+    background-color: #FFC700;
+    font-weight: bold;
+}
+
+.google_w_icon{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.iconify{
+    position: absolute;
+    left: 15%;
+}
+.or_div{
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    display: flex;
+    height: 20px;
+}
+.switch_to_signin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.switch_to_signin a{
+    color: #FFC700;
+}
+.switch_to_signin a:hover{
+    color: #e1a942;
+}
+
+.h_line{
+    width: 80%;
+    height: 1px;
+    background-color: #000;
+}
+
+.or_text{
+    position: absolute;
+    width: 60px;
+    height: 20px;
+    left: 45%;
+    background-color: #FFFFFF;
+}
+
+#register_button:hover{
+    background-color: #e1a942;
+}
+
+#google:hover, #facebook:hover, #apple:hover{
+    background-color: #FFC700;
+}

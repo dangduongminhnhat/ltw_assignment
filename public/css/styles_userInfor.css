@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "K2D";
+  margin: 0;
+}
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  font-weight: bold;
+  line-height: unset;
+  color: unset;
+}
+
+#UniEat {
+  color: #ffc700;
+}
+
+.main-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info1 {
+  width: 70%;
+  border-bottom: 1px black solid;
+  height: 8%;
+  margin-top: 10px;
+  padding: 5px;
+}
+
+.info1 p {
+  margin: 5px 0px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.content-icon {
+  position: relative;
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.content-icon .iconify {
+  position: absolute;
+  right: 0px;
+}
+
+.google_w_icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 70%;
+  border-bottom: 1px black solid;
+  height: 8%;
+  margin-top: 10px;
+  padding: 0px;
+}
+
+@media only screen and (max-width: 391px) {
+  .info1 {
+    width: 90%;
+  }
+  .google_w_icon {
+    width: 90%;
+  }
+}
+.form-check-input {
+  position: absolute;
+  right: 0px;
+}

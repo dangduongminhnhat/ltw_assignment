@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "K2D";
+  margin: 0;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  font-weight: bold;
+  line-height: unset;
+  color: unset;
+}
+
+.logo {
+  width: 100%;
+  background-color: #ffc700;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hompage_body {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.products {
+  margin-left: 50%;
+  transform: translate(-50%);
+  display: flex;
+  width: 95%;
+  justify-content: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.product {
+  width: 20%;
+  color: rgba(0, 0, 0, 0.5);
+  box-shadow: 1px 2px 5px rgba(164, 160, 160, 0.5);
+}
+
+.product,
+.items {
+  width: 30%;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.many_discount,
+.list_item {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.pro_info,
+.item_info {
+  margin-top: 15px;
+}
+
+.pro_info b {
+  color: black;
+}
+
+.pro_info p {
+  margin-top: 5px;
+  width: 50%;
+  margin-bottom: 5px;
+}
+
+.star_time_dis {
+  width: 70%;
+}
+
+.star_time_dis span,
+.star_time_dis p {
+  display: inline-block;
+}
+
+.iconify {
+  color: #ffc700;
+}
+
+.xemuudai,
+.xemcacthumuc {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px 0px 30px 0px;
+  border: 1px solid black;
+  border-radius: 20px;
+  height: 30px;
+}
+
+@media only screen and (max-width: 500px) and (max-height: 1000px) {
+  .logo,
+  footer {
+    height: 100px;
+  }
+  .insideLogo {
+    height: 100%;
+    display: flex;
+  }
+  .logofork img {
+    width: 70px;
+    height: 70px;
+  }
+  .for_littleS {
+    display: flex;
+    flex-direction: column;
+  }
+  .uni,
+  .liveto {
+    display: none;
+  }
+
+  .many_discount {
+    flex-direction: column;
+  }
+  .many_discount .product {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .no_image {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 501px) {
+  .for_littleS {
+    display: none;
+  }
+}

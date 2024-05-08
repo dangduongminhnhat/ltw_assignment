@@ -1,0 +1,144 @@
+* {
+  font-family: "K2D";
+}
+header {
+  border-bottom: 3px solid #c0c0c0;
+  padding: 20px;
+}
+.uni-header {
+  color: #ffc700;
+  margin-left: 20px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  display: inline;
+}
+.market-icon {
+  position: relative;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+header .icon-header {
+  max-width: 20%;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+.circle-number {
+  position: absolute;
+  right: -2px;
+  top: -5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: red;
+  border-radius: 50%;
+  color: white;
+  height: 14px;
+  width: 14px;
+  font-size: 10px;
+}
+.address-note {
+  border: 2px solid black;
+  border-radius: 20px;
+  min-width: 250px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.search-food {
+  margin-left: 50px;
+}
+.linkStyleColor {
+  color: #a9a9a9;
+}
+.container.container-border-modal {
+  border-top: 0.5px solid #dcdcdc;
+  border-left: 1px solid #c0c0c0;
+  border-right: 1px solid #c0c0c0;
+  border-bottom: 3px solid #c0c0c0;
+  margin-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.item-menu {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.sidebar {
+  visibility: hidden;
+  margin-left: -100%;
+  overflow: hidden;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: white;
+  transition: 0.5s ease-in-out;
+}
+.blur {
+  top: 0;
+  position: fixed;
+  z-index: 1;
+  height: 100vh;
+  width: 100vw;
+  background: black;
+  margin-left: -20px;
+  opacity: 10%;
+  visibility: hidden;
+  /* margin-left: -100%; */
+  transition: 0.5s ease-in-out;
+}
+.icon-sidebar {
+  display: none;
+}
+.search-icon {
+  display: none;
+}
+@media screen and (max-width: 905px) {
+  .address-note {
+    display: none;
+  }
+  .search-food {
+    display: none;
+  }
+  .search-icon {
+    display: block;
+    margin-left: auto;
+  }
+}
+@media screen and (max-width: 650px) {
+  /* .col.icon-nav {
+    display: none;
+  } */
+  .icon-sidebar {
+    display: flex;
+  }
+}
+.form-food {
+  display: flex;
+  align-items: center;
+}
+.number-food {
+  max-width: 20%;
+  display: flex;
+  align-items: center;
+}
+.price-food {
+  max-width: 20%;
+  text-align: right;
+}
+@media screen and (max-width: 992px) {
+  .number-food {
+    flex-direction: column;
+    max-width: 10%;
+  }
+}
+@media screen and (max-width: 495px) {
+  .form-food {
+    flex-direction: column;
+  }
+  .price-food {
+    max-width: 30%;
+  }
+}
